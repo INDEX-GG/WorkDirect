@@ -101,12 +101,12 @@
 </head>
 
 <body>
-<div class="preloader">
+<!-- <div class="preloader">
     <div class="preloader__row">
       <div class="preloader__item"></div>
       <div class="preloader__item"></div>
     </div>
-</div>
+</div> -->
 
     <header class="header-main">
         <div class="wrapper-xm">
@@ -120,6 +120,9 @@
     </header>
 
     <div class="main__block">
+        <div class='main__add'>
+            <!-- <img src="" alt="add" class="main__add-img"> -->
+        </div>
         <div class="wrapper">
             <form class="form1">
                 <div class="search_panel">
@@ -152,7 +155,8 @@
                             <input type="text" class="startPrice" placeholder="Цена от" type="input"  name="startPrice">
                             <div class="search_panel_input__block_radio_boxs">
                                 <span><label class="container-checkbox" >
-                                        <input type="checkbox" class="contractual"  >
+                                        <input type="checkbox"
+                                        checked class="contractual"  >
                                         <span class="checkmark"></span>
                                     </label>Включая договорную цену</span>
                             </div>
@@ -178,31 +182,66 @@
        
 
         <div class="wrapper">
-            <div class="items">
-                <div class="items__top_block">
-                    <h2 class="items__top_title">Мы нашли для вас <span class="count">0</span> подходящих проектов</h2>
-                    <div class="select">
-                        <div class="select__header">
-                            <span class="select__current">По умолчанию</span>
-                            <div class="select__icon"></div>
+            <div class="wrapper__inner">
+                <div class="items">
+                    <div class="items__top_block">
+                        <h2 class="items__top_title"><span class="count"></span></h2>
+                        <div class="select">
+                            <div class="select__header">
+                                <span class="select__current">По умолчанию</span>
+                                <div class="select__icon"></div>
+                            </div>
+                            <div class="select__body">
+                                <div class="select__item">По умолчанию</div>
+                                <div class="select__item sortDate">Сначала новые</div> 
+                                <div class="select__item">Дешевле</div>
+                                <div class="select__item">Дороже</div>
+                            </div>
                         </div>
-                        <div class="select__body">
-                            <div class="select__item">По умолчанию</div>
-                            <div class="select__item sortDate">Сначала новые</div> 
-                            <div class="select__item">Дешевле</div>
-                            <div class="select__item">Дороже</div>
+                    </div>
+                
+                    <div class="items_main">
+                        <div class="item__null">
+                            <div class="item"></div>
+                        </div>
+                        <div class="item__null">
+                            <div class="item"></div>
+                        </div>
+                        <div class="item__null">
+                            <div class="item"></div>
+                        </div>
+                        <div class="item__null">
+                            <div class="item"></div>
+                        </div>
+                        <div class="item__null">
+                            <div class="item"></div>
+                        </div>
+                        <div class="item__null">
+                            <div class="item"></div>
+                        </div>
+                        <div class="item__null">
+                            <div class="item"></div>
+                        </div>
+                        <div class="item__null">
+                            <div class="item"></div>
+                        </div>
+                        <div class="item__null">
+                            <div class="item"></div>
+                        </div>
+                        <div class="item__null">
+                            <div class="item"></div>
+                        </div>
+                        <div class="item__null">
+                            <div class="item"></div>
+                        </div>
+                        <div class="item__null">
+                            <div class="item"></div>
                         </div>
                     </div>
                 </div>
-             
-                <div class="items_main">
-                
-                
-
+                <div class="wrapper__add">
+                    <!-- <img class="main__add-img" src="" alt="add2"> -->
                 </div>
-
-   
-
             </div>
         </div>
     </div>

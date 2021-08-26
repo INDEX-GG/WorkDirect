@@ -2304,6 +2304,7 @@ let startPrice;
 let contractual;
 document.addEventListener('DOMContentLoaded', function () {
     let count = document.querySelector('.count');
+    let title = document.querySelector('.items__top_title')
     // let countText = document.querySelector('.items__top_title');
     // let item = document.querySelector('.item');
     let card = document.querySelector('.items_main');
@@ -2316,32 +2317,44 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.querySelector('.select__current').innerHTML = 'По умолчанию';
         card.innerHTML = '';
+        let addPost = 13;
+        let numberPost = 1;
         // console.log(data);
         // console.log(card);
         // console.log(data);
-        data[0].posts.map((post) => {
+        data[0].posts.map((post, index) => {
 
-            if ((data[1].contractual != true ? Number(post.price) >= Number(data[1].startPrice) && post.showPrice != null && post.showPrice != '' && post.showPrice != 'Договорная' : post.price == 0 || Number(data[1].startPrice) <= Number(post.price))) {
+            // console.log(post)
+
+            if (numberPost == addPost) {
+                addPost += 12;
+                card.innerHTML += '<div class="item__add"></div>'
+                return;
+            }
+
+            // (data[1].contractual != true ? Number(post.price) >= Number(data[1].startPrice) && post.showPrice != null && post.showPrice != '' && post.showPrice != 'Договорная' : post.price == 0 || Number(data[1].startPrice) <= Number(post.price))
+
+            if (true) {
                 if (card) {
+                    numberPost += 1
                     card.innerHTML += `
-                        <a href=${post.href} target="_blank" data-price='${post.price}' data='${DateMonster(post.days)}' data-day='${Data2Main(DateMonster(post.days))} '>
-                        <div class="item">
-                        <div class="item__top">
-                            <h3>${post.title}</h3>
-                            <button class="item-like"></button>
-                        </div>
-                        <div class="card-middle">${post.discription.length > 60 ? post.discription.slice(0, 60) + '...' : post.discription == 'Не указано' || post.discription == 'Отсутствует' ? '' : post.discription}
-                            <p class="card-text">${post.showPrice == null ? '' : post.showPrice}</p>
-                        </div>
-                        <div class="card-down">
-                            <span class="card-date">Размещено  ${DataMain(DateMonster(post.days))} </span>
-                            <div class="btn_watch">${((post.href).split('//')[1]).split('/')[0]}</div>
-                        </div>
-                        </div>
-                        </a>
-                    `;
+                    <a href=${post.href} target="_blank" data-price='${post.price}' data='${DateMonster(post.days)}' data-day='${Data2Main(DateMonster(post.days))} '>
+                    <div class="item">
+                    <div class="item__top">
+                        <h3>${post.title}</h3>
+                        <button class="item-like"></button>
+                    </div>
+                    <div class="card-middle">${post.discription.length > 60 ? post.discription.slice(0, 60) + '...' : post.discription == 'Не указано' || post.discription == 'Отсутствует' ? '' : post.discription}
+                        <p class="card-text">${post.showPrice == null ? '' : post.showPrice.length == 0 ? 'Договорная' : post.showPrice}</p>
+                    </div>
+                    <div class="card-down">
+                        <span class="card-date">Размещено  ${DataMain(DateMonster(post.days))} </span>
+                        <div class="btn_watch">${((post.href).split('//')[1]).split('/')[0]}</div>
+                    </div>
+                    </div>
+                    </a>`;
                 } else {
-                    // console.log('нет')
+                    // console.log('Нет')
                 }
             }
             document.body.classList.add('loaded_hiding');
@@ -2350,6 +2363,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.items__top_block .select__header').style.visibility = 'visible';
         })
         count.innerHTML = card.childElementCount;
+        title.innerHTML = `Мы нашли для вас <span class="count">${card.childElementCount}</span> подходящих проектов`;
     }
     /* Render(); */
 
@@ -2378,12 +2392,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var data = []
     function getData(query = 'разработка', { ...formData }) {
-        count.innerHTML = '0';
+        
+
+        console.log(1)
+
+        let itemMainContent = '';
+        let countContent = 0;
+
+        while(countContent < 12) {
+            itemMainContent += `<div class="item__null">
+                                    <div class="item"></div>
+                                </div>`;
+            countContent += 1
+        }
+
+        document.querySelector('.items_main').innerHTML = itemMainContent
+        title.innerHTML = ''
+
+        // count.innerHTML = '0';
         // console.log(query);
         // console.log(formData);
         // console.log(data);
         posts = [];
-        card.innerHTML = `<div class="preloader_items"><div class="preloader__row"><div class="preloader__item"></div><div class="preloader__item"></div></div></div><h2 class="preloader__text">Мы собираем заказы для вас</h2>`;
+        // card.innerHTML = `<div class="preloader_items"><div class="preloader__row"><div class="preloader__item"></div><div class="preloader__item"></div></div></div><h2 class="preloader__text">Мы собираем заказы для вас</h2>`;
 
 
 
@@ -2434,7 +2465,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     getData2()
     function getData2(query = 'разработка') {
-        count.innerHTML = '0';
+        // count.innerHTML = '0';
         // console.log(query);
         let formData = {
             input: '',
@@ -2444,7 +2475,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // console.log(formData);
         // console.log(data);
         posts = [];
-        card.innerHTML = `<div class="preloader_items"><div class="preloader__row"><div class="preloader__item"></div><div class="preloader__item"></div></div></div><h2 class="preloader__text">Мы собираем заказы для вас</h2>`;
+        // card.innerHTML = `<div class="preloader_items"><div class="preloader__row"><div class="preloader__item"></div><div class="preloader__item"></div></div></div><h2 class="preloader__text">Мы собираем заказы для вас</h2>`;
 
         axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/tasks?request=" + query)
             .then((response) => {
