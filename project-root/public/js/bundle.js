@@ -2317,6 +2317,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.querySelector('.select__current').innerHTML = 'По умолчанию';
         card.innerHTML = '';
+        document.querySelector('.placeholder_box').innerHTML = ''
         let addPost = 13;
         let numberPost = 1;
         // console.log(data);
@@ -2393,27 +2394,22 @@ document.addEventListener('DOMContentLoaded', function () {
     var data = []
     function getData(query = 'разработка', { ...formData }) {
         
-        console.log(1)
-
-        let itemMainContent = '';
-        let countContent = 0;
-
-        while(countContent < 12) {
-            itemMainContent += `<div class="item__null">
-                                    <div class="item"></div>
-                                </div>`;
-            countContent += 1
-        }
-
-        document.querySelector('.items_main').innerHTML = itemMainContent
+        document.querySelector('.select__current').innerHTML = ''
         title.innerHTML = ''
+        document.querySelector('.placeholder_box').innerHTML = `<div class="preloader_items">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <h2  class="preloader__text">Мы собираем заказы для вас</h2>`
+        card.innerHTML = '';
 
         // count.innerHTML = '0';
         // console.log(query);
         // console.log(formData);
         // console.log(data);
         posts = [];
-        // card.innerHTML = `<div class="preloader_items"><div class="preloader__row"><div class="preloader__item"></div><div class="preloader__item"></div></div></div><h2 class="preloader__text">Мы собираем заказы для вас</h2>`;
 
 
 

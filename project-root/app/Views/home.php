@@ -200,43 +200,17 @@
                         </div>
                     </div>
                 
+                    <div class="placeholder_box">
+                        <div class="preloader_items">
+                            <div class="preloader__row">
+                                <div class="preloader__item"></div>
+                                <div class="preloader__item"></div>
+                            </div>
+                        </div>
+                        <h2  class="preloader__text">Мы собираем заказы для вас</h2>
+                    </div>
+
                     <div class="items_main">
-                        <div class="item__null">
-                            <div class="item"></div>
-                        </div>
-                        <div class="item__null">
-                            <div class="item"></div>
-                        </div>
-                        <div class="item__null">
-                            <div class="item"></div>
-                        </div>
-                        <div class="item__null">
-                            <div class="item"></div>
-                        </div>
-                        <div class="item__null">
-                            <div class="item"></div>
-                        </div>
-                        <div class="item__null">
-                            <div class="item"></div>
-                        </div>
-                        <div class="item__null">
-                            <div class="item"></div>
-                        </div>
-                        <div class="item__null">
-                            <div class="item"></div>
-                        </div>
-                        <div class="item__null">
-                            <div class="item"></div>
-                        </div>
-                        <div class="item__null">
-                            <div class="item"></div>
-                        </div>
-                        <div class="item__null">
-                            <div class="item"></div>
-                        </div>
-                        <div class="item__null">
-                            <div class="item"></div>
-                        </div>
                     </div>
                 </div>
                 <div class="wrapper__add">
