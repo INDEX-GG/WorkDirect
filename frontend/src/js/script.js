@@ -120,7 +120,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var data = []
     function getData(query = 'разработка', { ...formData }) {
         
-
         console.log(1)
 
         let itemMainContent = '';
