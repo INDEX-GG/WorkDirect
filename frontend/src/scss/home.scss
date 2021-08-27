@@ -418,6 +418,11 @@ footer {
         width: 100%;
         max-width: 100%;
     }
+
+    .item__null {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -476,6 +481,10 @@ footer {
 }
 
 @media screen and (max-width: 650px) {
+    .item__add {
+        height: 85px;
+        margin-bottom: 16px;
+    }
     .search_panel_input__block_radio_boxs span {
         margin-right: 15px;
     }
@@ -487,10 +496,6 @@ footer {
     }
     .item {
         padding: 8px 10px;
-        margin-bottom: 16px;
-    }
-    .item__add {
-        height: 85px;
         margin-bottom: 16px;
     }
     .items__top_block {
