@@ -2314,15 +2314,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     function Render() {
-
-        document.querySelector('.select__current').innerHTML = 'По умолчанию';
         card.innerHTML = '';
         document.querySelector('.placeholder_box').innerHTML = ''
+        // document.querySelector('.select__current').innerHTML = ''
         let addPost = 13;
         let numberPost = 1;
         // console.log(data);
         // console.log(card);
         // console.log(data);
+        console.log(data[0].posts.length)
         data[0].posts.map((post, index) => {
 
             // console.log(post)
@@ -2393,7 +2393,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var data = []
     function getData(query = 'разработка', { ...formData }) {
-        
         document.querySelector('.select__current').innerHTML = ''
         title.innerHTML = ''
         document.querySelector('.placeholder_box').innerHTML = `<div class="preloader_items">
@@ -2423,6 +2422,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         data = [{ "posts": [...data[0].posts, ...response.data] }, formData]
                         // console.log(data);
                         Render(data);
+                        console.log(1)
                     })
                 /*  axios.get("/tasks2?request=" + query)
                      .then((response) => {
@@ -2434,17 +2434,20 @@ document.addEventListener('DOMContentLoaded', function () {
                         data = [{ "posts": [...data[0].posts, ...response.data] }, formData]
                         // console.log(data);
                         Render(data);
+                        console.log(2)
                     })
                 axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/tasks4?request=" + query)
                     .then((response) => {
                         data = [{ "posts": [...data[0].posts, ...response.data] }, formData]
                         // console.log(data);
                         Render(data);
+                        console.log(3)
                     })
                 axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/tasks5?request=" + query)
                     .then((response) => {
                         data = [{ "posts": [...data[0].posts, ...response.data] }, formData]
                         // console.log(data);
+                        document.querySelector('.select__current').innerHTML = 'По умолчанию';
                         Render(data);
                     })
 
@@ -2499,6 +2502,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     .then((response) => {
                         data = [{ "posts": [...data[0].posts, ...response.data] }, formData]
                         // console.log(data);
+                        document.querySelector('.select__current').innerHTML = 'По умолчанию';
                         Render(data);
                     })
 
