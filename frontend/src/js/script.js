@@ -56,7 +56,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (numberPost == addPost) {
                 addPost += 12;
-                card.innerHTML += '<div class="item__add"></div>'
+                card.innerHTML += `
+                <div class="item__add">
+                    <div id="yandex_rtb_R-A-1315330-1"></div>
+                    <script>window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-1315330-1',
+                        blockId: 'R-A-1315330-1'
+                    })
+                    })</script>
+                </div>`
                 return;
             }
 
