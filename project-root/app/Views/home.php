@@ -13,7 +13,7 @@
     <!-- Ads Target -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6988243691587850"
      crossorigin="anonymous"></script>
-    <meta name="yandex-verification" content="d98d5909c8e68bb0" />
+    <meta name="yandex-verification" content="3b16e6fbb7da9868" />
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
