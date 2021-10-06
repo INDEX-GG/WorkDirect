@@ -2327,11 +2327,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // console.log(post)
 
-            if (numberPost == addPost) {
-                addPost += 12;
-                card.innerHTML += '<div class="item__add"></div>'
-                return;
-            }
+            //? РЕКЛАМА
+            // if (numberPost == addPost) {
+            //     addPost += 12;
+            //     card.innerHTML += `
+            //     <div class="item__add"></div>`
+            //     return;
+            // }
 
             // (data[1].contractual != true ? Number(post.price) >= Number(data[1].startPrice) && post.showPrice != null && post.showPrice != '' && post.showPrice != 'Договорная' : post.price == 0 || Number(data[1].startPrice) <= Number(post.price))
 
