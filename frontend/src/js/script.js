@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // console.log(post)
 
-            //? РЕКЛАМА
             // if (numberPost == addPost) {
             //     addPost += 12;
             //     card.innerHTML += `

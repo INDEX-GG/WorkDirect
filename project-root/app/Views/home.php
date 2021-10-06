@@ -10,7 +10,7 @@
     <title>WorkDirect — Агрегатор бирж фриланса</title>
     <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/"> -->
     <link rel="stylesheet" href="./css/style.min.css">
-    <!-- Ads -->
+    <!-- Ads Target -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6988243691587850"
      crossorigin="anonymous"></script>
 
