@@ -189,7 +189,7 @@
                         <h2 class="items__top_title"><span class="count"></span></h2>
                         <div class="select">
                             <div class="select__header">
-                                <span class="select__current">По умолчанию</span>
+                                <span class="select__current"></span>
                                 <div class="select__icon"></div>
                             </div>
                             <div class="select__body">
