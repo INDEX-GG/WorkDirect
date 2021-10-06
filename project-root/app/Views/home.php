@@ -10,6 +10,9 @@
     <title>WorkDirect — Агрегатор бирж фриланса</title>
     <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/"> -->
     <link rel="stylesheet" href="./css/style.min.css">
+    <!-- Ads Target -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6988243691587850"
+     crossorigin="anonymous"></script>
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="./img/favicon.ico" sizes="180x180">
@@ -120,9 +123,7 @@
     </header>
 
     <div class="main__block">
-        <div class='main__add'>
-            <!-- <img src="" alt="add" class="main__add-img"> -->
-        </div>
+        <!-- <div class='main__add'></div> -->
         <div class="wrapper">
             <form class="form1">
                 <div class="search_panel">
@@ -213,9 +214,7 @@
                     <div class="items_main">
                     </div>
                 </div>
-                <div class="wrapper__add">
-                    <!-- <img class="main__add-img" src="" alt="add2"> -->
-                </div>
+                <!-- <div class="wrapper__add"></div> -->
             </div>
         </div>
     </div>
