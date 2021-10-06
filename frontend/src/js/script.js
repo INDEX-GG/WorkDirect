@@ -54,25 +54,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // console.log(post)
 
-            if (numberPost == addPost) {
-                addPost += 12;
-                card.innerHTML += `
-                <div class="item__add">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6988243691587850"
-                    crossorigin="anonymous"></script>
-                <!-- WorkDirect -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-6988243691587850"
-                    data-ad-slot="8062000531"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-                </div>`
-                return;
-            }
+            // if (numberPost == addPost) {
+            //     addPost += 12;
+            //     card.innerHTML += `<div class="item__add"></div>`
+            //     return;
+            // }
 
             // (data[1].contractual != true ? Number(post.price) >= Number(data[1].startPrice) && post.showPrice != null && post.showPrice != '' && post.showPrice != 'Договорная' : post.price == 0 || Number(data[1].startPrice) <= Number(post.price))
 
