@@ -32,7 +32,7 @@ class Database extends Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => '192.168.45.183',
+		'hostname' => '192.168.145.183',
 		'username' => 'kvik',
 		'password' => '2262',
 		'database' => 'zakas',
