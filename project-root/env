@@ -52,7 +52,7 @@ CI_ENVIRONMENT = development
 # DATABASE
 #--------------------------------------------------------------------
 
-database.default.hostname = 192.168.45.183
+database.default.hostname = 192.168.145.183
 database.default.database = zakas
 database.default.username = kvik
 database.default.password = 2262
